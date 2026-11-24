@@ -1,0 +1,98 @@
+/* ==========================================================================
+   LUXURY TRAVEL DESIGN SYSTEM - TOKENS & BASELINE
+   Strict palette:
+   - Pure White: #FFFFFF (Main background)
+   - Soft White: #F7F7F4 (Alternate background & sections)
+   - Forest Green: #263C32 (Primary brand)
+   - Deep Olive: #465747 (Secondary brand)
+   - Champagne Gold: #C4A46D (Accent & highlights)
+   - Charcoal: #292D2A (Headings & titles)
+   - Muted Grey: #777D78 (Body text & secondary info)
+   - Light Grey: #E8E9E5 (Borders & dividers)
+   ========================================================================== */
+
+:root {
+  /* Colors */
+  --color-white: #FFFFFF;
+  --color-soft-white: #F7F7F4;
+  --color-forest-green: #263C32;
+  --color-forest-hover: #1b2c24;
+  --color-deep-olive: #465747;
+  --color-champagne-gold: #C4A46D;
+  --color-gold-hover: #b39158;
+  --color-gold-soft: rgba(196, 164, 109, 0.15);
+  --color-charcoal: #292D2A;
+  --color-muted-grey: #777D78;
+  --color-light-grey: #E8E9E5;
+  --color-border-subtle: #F0F1ED;
+  --color-danger: #d9534f;
+
+  /* Aliases for semantic usage */
+  --bg-main: var(--color-white);
+  --bg-alt: var(--color-soft-white);
+  --primary: var(--color-forest-green);
+  --primary-hover: var(--color-forest-hover);
+  --secondary: var(--color-deep-olive);
+  --accent: var(--color-champagne-gold);
+  --text-main: var(--color-charcoal);
+  --text-dim: var(--color-muted-grey);
+  --border-color: var(--color-light-grey);
+  --card-bg: var(--color-white);
+
+  /* Typography */
+  --font-heading: 'Playfair Display', Georgia, serif;
+  --font-body: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(41, 45, 42, 0.04);
+  --shadow-md: 0 8px 24px rgba(41, 45, 42, 0.06);
+  --shadow-lg: 0 16px 40px rgba(41, 45, 42, 0.08);
+
+  /* Transitions */
+  --transition-fast: 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-normal: 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-muted-grey);
+  background-color: var(--color-white);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--color-charcoal);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1.25;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+button, input, select, textarea {
+  font-family: var(--font-body);
+}
+
+::selection {
+  background-color: var(--color-forest-green);
+  color: var(--color-white);
+}
